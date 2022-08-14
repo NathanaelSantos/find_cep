@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String _inputValue = '';
 
-  Future<void> _incrementCounter() async {
+  Future<void> _getPosts() async {
     final response = await http
         .get(Uri.parse('https://viacep.com.br/ws/$_inputValue/json/'));
 
@@ -73,7 +73,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Padding(
               padding: EdgeInsets.all(23.0),
               child: Text(
-                'Information',
+                'Request result',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
               ),
             ),
             Text(
@@ -86,8 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
+        onPressed: _getPosts,
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
