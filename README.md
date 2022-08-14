@@ -1,8 +1,18 @@
-# search_cep
+# HTTP Requests in Flutter
+## A composable, Future-based library for making HTTP requests.
 
-A new Flutter project.
+## Step 1 - add library
+### With Dart:
+ `dart pub add http`
+ 
+### With Flutter:
+ `flutter pub add http`
+ 
+### Now in your Dart code, you can use:
 
-## Getting Started
+`import 'package:http/http.dart';`
+
+## Step 2 - Requests
 
 This project is a starting point for a Flutter application.
 
