@@ -14,7 +14,9 @@
 
 ## Step 2 - Requests
 
-![](img/http.png)
+<img align="center" src="img/http.png" />
+
+<img align="center" src="img/request_result.png" style="width: 320px" />
 
 
 This project is a starting point for a Flutter application.
